@@ -14,6 +14,16 @@ export default function loadHome() {
     imageElement.src = bodyImage;
     imageElement.id = "chef-image";
     whiteCard.appendChild(imageElement);
+    // Add some text to the card
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("text-container");
+    const titleText = document.createElement("h2");
+    titleText.textContent = "Title Text";
+    const description = document.createElement("p");
+    description.textContent = "Some text underneath the title";
+    textContainer.appendChild(titleText);
+    textContainer.appendChild(description);
+    whiteCard.appendChild(textContainer);
 }
 
 // export default function loadHome() {
