@@ -1,3 +1,88 @@
+@font-face {
+    font-family: 'MyHeaderFont';
+    src: url("./fonts/Title.ttf");
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url("./fonts/Mukta.ttf");
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'MyHeaderFont', sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    content: "My Res";
+}
+
+header #headerImage {
+    width: 20px;
+    height: 20px;
+}
+
+#content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 button {
-    color: blue;
+    font-family: "MyFont", sans-serif;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, button:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-content {
+    background-image: url(./images/carlos-aranda-IYMceGutrbQ-unsplash.jpg);
+    height: 500px;
+    position: relative;
+}
+
+.white-card {
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#chef-image {
+    height: 50%;
+    width: 50%;
+    float: left;
 }
