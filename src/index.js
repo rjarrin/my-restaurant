@@ -1,5 +1,6 @@
 import './style.css';
 import loadHome from './home.js';
+import loadMenu from './menu.js';
 
 // Identify the header container
 const header = document.querySelector("header");
@@ -8,7 +9,8 @@ const title = document.createElement("h1");
 title.textContent = "My Restaurant";
 header.prepend(title);
 // Load the default tab (Home)
-loadHome();
+//loadHome();
+loadMenu();
 // Add a footer
 const footer = document.createElement("footer");
 footer.textContent = '© 2023 My Restaurant';
@@ -26,10 +28,18 @@ function clearAndLoadHome() {
     loadHome();
 }
 
+// Menu Button function
+function clearAndLoadMenu() {
+    const content = document.getElementById("content");
+    content.replaceChildren();
+    loadMenu();
+}
+
 // Attach event listeners to the buttons
 homeButton.addEventListener("click", clearAndLoadHome);
 menuButton.addEventListener("click", () => {
     console.log("Menu button clicked");
+    clearAndLoadMenu();
 });
 aboutButton.addEventListener("click", () => {
     console.log("About button clicked");

@@ -1,4 +1,3 @@
-import headerImage from './images/carlos-aranda-IYMceGutrbQ-unsplash.jpg';
 import bodyImage from './images/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg';
 
 export default function loadHome() {
